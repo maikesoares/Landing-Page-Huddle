@@ -1,0 +1,163 @@
+html {
+  background: url(../images/bg-desktop.svg) no-repeat;
+  background-size: cover;
+  background-color: var(--cor-padrao);
+  font-family: 'Open sans' ,sans-serif;
+  min-width: 100vh;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main{
+  margin-left: 100px;
+}
+
+.container .image {
+  display: flex;
+}
+
+.container .image .descricao {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 45px;
+  padding-top: 45px;
+}
+
+.container .image .descricao .titulo {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.container .image .descricao p {
+  color: #fff;
+  line-height: 30px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container .image .descricao .btn {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--cor-padrao);
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.container .image .descricao .btn:hover{
+  cursor: pointer;
+  background-color: var(--cor-hover);
+  color: #fff;
+}
+
+.container .rodape {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.container .rodape .social {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 55px 0 0;
+}
+
+.container .rodape .social a {
+  width: 50px;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.container .rodape .social a i{
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.container .rodape .social a .fab:hover{
+  color: var(--cor-hover);
+}
+
+@media (max-width: 768px) {
+
+  html {
+    background: url(../images/bg-mobile.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--cor-padrao);
+    font-family: 'Open sans' ,sans-serif;
+    min-width: 320px;
+  }
+  .container .image {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .main{
+    margin-left: 0;
+    width: 325px;
+  }
+
+  .container .image .descricao {
+    width: 325px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .container .image .descricao .titulo {
+    margin-top: 20px;
+  }
+
+  .container .image .descricao .btn {
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .container .rodape .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  .container .main .logo {
+    width: 150px;
+  }
+
+  .container .image .descricao .titulo {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .container .rodape .social a {
+    width: 30px;
+    font-size: 20px;
+  }
+}
